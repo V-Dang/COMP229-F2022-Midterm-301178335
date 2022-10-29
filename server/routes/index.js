@@ -1,3 +1,4 @@
+//COMP229-F2022-MidTerm-301178335 - Vivian Dang 301178335 - COMP229 Midterm Assignment (Faculties)
 // modules required for routing
 let express = require("express");
 let router = express.Router();
