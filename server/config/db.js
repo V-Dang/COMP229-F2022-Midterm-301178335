@@ -1,4 +1,5 @@
 //COMP229-F2022-MidTerm-301178335 - Vivian Dang 301178335 - COMP229 Midterm Assignment (Faculties)
+//To connect to MongoDB Atlast Database
 
 module.exports = {
   //local MongoDB deployment ->

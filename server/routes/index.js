@@ -8,6 +8,7 @@ let mongoose = require("mongoose");
 let faculty = require("../models/faculties");
 
 /* GET home page. wildcard */
+//SEE VIEWS/CONTENT FOLDER
 router.get("/", (req, res, next) => {
   res.render("content/index", {
     title: "Home",
@@ -15,6 +16,7 @@ router.get("/", (req, res, next) => {
   });
 });
 
+//SEE VIEWS/FACULTIES FOLDER
 router.get("/faculties", (req, res, next) => {
   res.render("faculties", {
     title: "Faculties",

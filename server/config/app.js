@@ -11,6 +11,7 @@ let mongoose = require("mongoose");
 // URI
 let DB = require("./db");
 
+//TO CONNECT TO MONGODB
 mongoose.connect(process.env.URI || DB.URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -26,7 +27,7 @@ mongoDB.once("open", () => {
 
 
 
-// define routers
+// DEFINE ROUTERS
 let index = require("../routes/index"); // top level routes
 let facultiesRouter = require("../routes/faculties"); // routes for faculties
 
@@ -43,7 +44,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../../client")));
 
-// route redirects
+// ROUTE REDIRECTS
 app.use("/", index);
 app.use("/faculties", facultiesRouter);
 app.use("/faculties-list", facultiesRouter);
